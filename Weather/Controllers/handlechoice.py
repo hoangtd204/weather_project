@@ -1,16 +1,13 @@
-
-
+from Services.search_current_weather import search_current_weather
+from  Services.get_history import get_search_history
 def handle_choice(choice):
     if choice == '1':
-        print("Checking current weather...")
+        search_current_weather()
     elif choice == '2':
-        print("Checking 5-day forecast...")
-    elif choice == '3':
-        print("Showing search history...")
-    elif choice == '4':
-        print("Checking sunrise and sunset...")
-    elif choice == '5':
-        print("Checking weather alerts...")
+        print("History Searching")
+        for city in get_search_history():
+
+            print("📍", city)
     else:
         print("Invalid choice. Please try again!")
 

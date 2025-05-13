@@ -1,1 +1,1 @@
-valid_choices = {'1', '2', '3', '4', '5'}
+valid_choices = {'1', '2'}

@@ -2,7 +2,6 @@ from Weather.Views.menu import display_menu
 from Weather.Controllers.handlechoice import handle_choice
 from Weather.Valids.choice_valid import valid_choices
 def main():
-
     while True:
         display_menu()
         choice = input("Enter your choice:")
