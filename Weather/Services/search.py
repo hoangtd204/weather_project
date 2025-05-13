@@ -1,6 +1,6 @@
 import requests
 
-def get_input():
+def search():
     while True:
         try:
             city_input = input("Enter City: ")
